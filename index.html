@@ -9,21 +9,25 @@
 </head>
 <body>
 	<header class="main-header">
-		<img src="#" alt="Логотип" class="logo">
-		<nav class="main-nav">
-			<ul class="site-nav">
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Прайс-лист</a></li>
-				<li><a href="#">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="user-nav">
-				<li><a href="#">Вход</a></li>
-			</ul>
-		</nav>
+		<img src="img/index-logo.svg" height="155px" width="370px" alt="Логотип" class="logo">
+		<div class="header-wrapper">
+			<div class="conteiner">
+				<nav class="main-nav">
+					<ul class="site-nav">
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Прайс-лист</a></li>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="user-nav">
+						<li><a href="#">Вход</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</header>
-	<main>
+	<main class="conteiner">
 		<h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
 		<section class="features">
 			<h2 class="visually-hidden">Преимущества</h2>
@@ -49,12 +53,12 @@
 				<ul class="news-list">
 					<h2>Новости</h2>
 					<li class="news-item">
-						<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+						<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ <br>ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
 </p>
 						<time datetime="2016-01-11">11 января</time>
 					</li>
 					<li class="news-item">
-						<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+						<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, <br> ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ <br>СТРОЙНЫЕ РЯДЫ</p>
 						<time datetime="2016-01-18">11 января</time>
 					</li>
 				</ul>
@@ -63,7 +67,7 @@
 			<section class="gallery">
 				<h2>Фотогалерея</h2>
 				<figure class="gallery-content">
-					<a href="#"><img src="#" alt="Картинка"></a>
+					<a href="#"><img src="img/gallery.jpg" width="285px" height="165px" alt="Картинка"></a>
 				</figure>
 				<button class="button gallery-button gallery-button-back" type="button">Назад</button>
 				<button class="button gallery-button gallery-button-next" type="button">Вперед</button>
@@ -87,7 +91,7 @@
 			</section>
 			<section class="apointment">
 				<h2>Записаться</h2>
-				<p class="apointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+				<p class="apointment-info">Укажите желаемую дату и время и мы свяжемся <br> с вами для подтверждения брони</p>
 				<form class="appointment-form" action="#" method="post">
 					<p class="appointment-item">
 						<label for="appointment-form-date">Дата</label>
@@ -109,14 +113,16 @@
 				<button class="button" type="submit">Отправить</button>
 			</section>
 		</div>
-		<footer>
+	</main>
+	<footer>
+		<div class="conteiner">
 			<p>
 				Барбершор "Бородинский" <br>
 				Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8 <br>
 				<a href="#" class="how">Как нас найти?</a> <br>
 				Телефон: +7 (812) 666-02-66
 			</p>
-
+			
 			<div class="footer-social">
 				<b>Давайте дружить!</b>
 				<ul>
@@ -129,38 +135,38 @@
 				<b>Разработано</b>
 				<a href="#" class="button">HTML ACADEMY</a>
 			</p>
-		</footer>
-		<section class="modal modal-login">
-			<h2>Личный кабинет</h2>
-			<p>Введите свой логин и пароль</p>
-			<form class="login-form" action="#">
-				<p>
-					<label for="login-icon-user" class="visually-hidden">Логин</label>
-					<input id="login-icon-user" name="login" type="text" placeholder="Логин">
-				</p>
-				<p>
-					<label for="login-icon-password" class="visually-hidden">Пароль</label>
-					<input id="login-icon-password" name="password" type="text" placeholder="Пароль">
-				</p>
-				<p class="login-password-info">
-					<label class="login-checkbox">
-						<input name="remember" type="checkbox" class="visually-hidden">
-						<span class="checkbox-indicator"></span>
-						Запомните меня
-					</label>
-					<a class="restore" href="#">Я забыл пароль!</a>
-				</p>
-				<button class="button" type="submit">Войти</button>
-			</form>
-			<button class="modal-close" type="button">Закрыть</button>
-		</section>
-		<section class="modal modal-map">
-			<h2 class="visually-hidden">Как до нас добраться</h2>
+		</div>
+	</footer>
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+		<form class="login-form" action="#">
 			<p>
-				<img src="#" alt="офис компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+				<label for="login-icon-user" class="visually-hidden">Логин</label>
+				<input id="login-icon-user" name="login" type="text" placeholder="Логин">
 			</p>
-			<button class="modal-map-close" type="button">Закрыть</button>
-		</section>
-	</main>
+			<p>
+				<label for="login-icon-password" class="visually-hidden">Пароль</label>
+				<input id="login-icon-password" name="password" type="text" placeholder="Пароль">
+			</p>
+			<p class="login-password-info">
+				<label class="login-checkbox">
+					<input name="remember" type="checkbox" class="visually-hidden">
+					<span class="checkbox-indicator"></span>
+					Запомните меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+			</p>
+			<button class="button" type="submit">Войти</button>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться</h2>
+		<p>
+			<img src="#" alt="офис компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+		</p>
+		<button class="modal-map-close" type="button">Закрыть</button>
+	</section>
 </body>
 </html>

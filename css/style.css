@@ -153,6 +153,7 @@ a {
 	padding: 55px 80px;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 65px;
 }
 
 .contact-block h2{
@@ -266,6 +267,22 @@ footer .conteiner {
 	color: #000;
 }
 
+.other-header {
+	background-color: #000;
+}
+
+.other-header .conteiner {
+	display: flex;
+}
+
+.other-header .logo{
+	order: 0;
+}
+
+.other-header {
+	margin-bottom: 42px;
+}
+
 .breadcrumbs li {
 	list-style: none;
 }
@@ -279,6 +296,25 @@ footer .conteiner {
 	color: #aba9a7;
 }
 
+.product-photos {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.product-photos-preview {
+	display: flex;
+	width: 460px;
+	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+}
+
 .product-photos-preview li{
 	list-style: none;
 }
@@ -288,13 +324,53 @@ footer .conteiner {
 	background-color: #e5e5e5;
 }
 
+.product-text {
+	width: 390px;
+}
+
 .product-info h3 {
 	font-size: 24px;
 	line-height: 30px;
 }
 
+.product-info ul {
+	padding: 0;
+	margin: 0;
+}
+
+.articul-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.price h1 {
+	text-align: center;
+	margin-bottom: 63px;
+}
+
+.features-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.about-us {
+	width: 390px;
+	border: 1px solid red;
+}
+
+.price-list p {
+	width: 380px;
+	border: 1px solid red;
+}
+
 .product-info li {
 	list-style: none;
+}
+
+.features-us-item-list {
+	padding: 0;
+	margin: 0;
 }
 
 .features-us-item-list li {
@@ -315,6 +391,10 @@ border: 2px solid #000; /*устанавливаем для таблицы вн�
 	border: none;
 }
 
+.filter-wrapper {
+	display: flex;
+}
+
 .filters-form li {
 	list-style: none;
 }
@@ -326,8 +406,27 @@ border: 2px solid #000; /*устанавливаем для таблицы вн�
 	color: #663d15;
 }
 
+.catalog-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
 .catalog-item {
+	display: flex;
+	flex-direction: column;
 	list-style: none;
+	width: 220px;
+}
+
+.catalog-item a {
+	padding: 0;
+	margin: 0;
+	order: 2;
+}
+
+.catalog-item-price {
+	order: 3;
 }
 
 .catalog-item a {
@@ -345,6 +444,10 @@ border: 2px solid #000; /*устанавливаем для таблицы вн�
 
 .item-page .button {
 	color: #fff;
+}
+
+.pagination-list {
+	display: flex;
 }
 
 .pagination-item {

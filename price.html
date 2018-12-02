@@ -8,71 +8,76 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="item-page">
-	<header class="main-header">
-		<img src="index.html" alt="Логотип" class="logo">
-		<nav class="main-nav">
-			<ul class="site-nav">
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#" class="site-nav-current">Прайс-лист</a></li>
-				<li><a href="#">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="user-nav">
-				<li><a href="#">Вход</a></li>
-			</ul>
-		</nav>
+	<header class="main-header other-header">
+		<div class="conteiner">
+			<img src="img/logo.svg" alt="Логотип" class="logo">
+			<nav class="main-nav">
+				<ul class="site-nav">
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#" class="site-nav-current">Прайс-лист</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="user-nav">
+					<li><a href="#">Вход</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-	<main class="conteiner">
+	<main class="conteiner price">
 		<h2>Прайс-лист</h2>
 		<ul class="breadcrumbs">
 			<li><a href="#">Главная</a></li>
 			<li class="breadcrumbs-current">Прайс-лист</li>
 		</ul>
 		<h1>Истинно мужская классика</h1>
-		<section class="features-us">
-			<p class="features-us-item">
-				<h2>Мы используем только лучшие средства:</h2>
-				<ul class="features-us-item-list">
-					<li>Baxter of California</li>
-					<li>Mr Natty</li>
-					<li>Suavecito</li>
-					<li>Malin-Goetz</li>
-				</ul>
-			</p>
-			<p class="about-us">
-				<h2>Несколько слов о нас:</h2>
-				<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-			</p>
-		</section>
-		<section class="price-list">
-			<h2>Цены на услуги наших мастеров:</h2>
-			<table border="2" class="price-table">
-				<caption class="visually-hidden">Цены на услуги</caption>
-				<tr>
-					<td>Стрижка</td>
-					<td>1500 р</td>
-				</tr>
-				<tr>
-					<td>Стрижка Бороды</td>
-					<td>500 р</td>
-				</tr>
-				<tr>
-					<td>Накрутка усов</td>
-					<td>350 р</td>
-				</tr>
-			</table>
-			<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
-		</section>
+		<div class="features-wrapper">
+			<section class="features-us">
+				<section class="features-us-item">
+					<h2>Мы используем только лучшие средства:</h2>
+					<ul class="features-us-item-list">
+						<li>Baxter of California</li>
+						<li>Mr Natty</li>
+						<li>Suavecito</li>
+						<li>Malin-Goetz</li>
+					</ul>
+				</section>
+				<section class="about-us">
+					<h2>Несколько слов о нас:</h2>
+					<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+				</section>
+			</section>
+			<section class="price-list">
+				<h2>Цены на услуги наших мастеров:</h2>
+				<table border="2" class="price-table">
+					<caption class="visually-hidden">Цены на услуги</caption>
+					<tr>
+						<td>Стрижка</td>
+						<td>1500 р</td>
+					</tr>
+					<tr>
+						<td>Стрижка Бороды</td>
+						<td>500 р</td>
+					</tr>
+					<tr>
+						<td>Накрутка усов</td>
+						<td>350 р</td>
+					</tr>
+				</table>
+				<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+			</section>
+		</div>
 	</main>
 	<footer>
+		<div class="conteiner">
 			<p>
 				Барбершор "Бородинский" <br>
 				Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8 <br>
 				<a href="#" class="how">Как нас найти?</a> <br>
 				Телефон: +7 (812) 666-02-66
 			</p>
-
+			
 			<div class="footer-social">
 				<b>Давайте дружить!</b>
 				<ul>
@@ -85,6 +90,7 @@
 				<b>Разработано</b>
 				<a href="#" class="button">HTML ACADEMY</a>
 			</p>
-		</footer>
+		</div>
+	</footer>
 </body>
 </html>

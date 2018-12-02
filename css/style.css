@@ -23,7 +23,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 80px;
+	margin-bottom: 74px;
 }
 
 .header-wrapper {
@@ -47,6 +47,8 @@ a {
 .site-nav {
 	padding: 0;
 	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .user-nav {
@@ -65,6 +67,7 @@ a {
 	text-transform: uppercase;
 	text-align: center;
 	border: 0;
+	padding: 10px 35px;
 }
 
 .button:hover,
@@ -79,12 +82,77 @@ a {
 
 .site-nav a,
 .user-nav a {
+	display: block;
+	padding: 25px 20px;
 	color: #fff;
 }
 
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus {
+	background-color: #242424;
+}
+
+.user-nav a {
+	position: relative;
+	display: block;
+	padding-left: 50px;
+}
+
+.user-nav a:before {
+	content: '';
+	width: 14px;
+	height: 14px;
+	top: 29px;
+	left: 25px;
+	opacity: 0.3;
+	position: absolute;
+	background-image: url(../img/logiт-user.svg);
+	background-repeat: no-repeat;
+}
+
+.user-nav a:hover:before {
+	opacity: 1;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .features h3 {
+	position: relative;
 	font-size: 30px;
 	line-height: 42px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 65px;
+}
+
+.features h3:after {
+	position: absolute;
+	left: 50%;
+	bottom: -28px;
+	margin-left: -10px;
+	transform: rotate(45deg);
+	content: '';
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
 }
 
 .features {
@@ -101,22 +169,20 @@ a {
 
 .news-block {
 	background-color: #f8f5f2;
-	background-image: url(../img/news-bg.png);
+	background-image: url(../img/shadow-bg.png),
+						url(../img/news-bg.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: space-between;
-	padding: 55px 80px;
+	padding: 50px 80px;
 	margin-bottom: 35px;
-}
-
-.news {
-	border: 1px solid red;
 }
 
 .news-list {
 	padding: 0;
 	margin: 0;
+	margin-bottom: 30px;
 }
 
 .news-block h2 {
@@ -124,11 +190,18 @@ a {
 	line-height: 42px;
 	color: #000;
 	margin: 0;
+	margin-bottom: 21px;
+}
+
+.news-item p {
+	margin: 0;
+	padding: 0;
 }
 
 .news li {
 	list-style: none;
 	color: #000;
+	margin-bottom: 24px;
 }
 
 .news time {
@@ -139,21 +212,42 @@ a {
 	border: 7px solid #fff;
 	margin: 0;
 	padding: 0;
+	max-height: 165px;
+	margin-bottom: 40px;
 }
 
 .gallery {
-	border: 1px solid red;
+	position: relative;
+}
+
+.gallery-button-next {
+	position: absolute;
+	right: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.gallery-button-back {
+	position: absolute;
+	left: 0;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .contact-block {
 	background-color: #f8f5f2;
-	background-image: url(../img/news-bg.png);
+	background-image: url(../img/shadow-bg.png),
+					url(../img/news-bg.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	padding: 55px 80px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 65px;
+}
+
+.feedback {
+	margin-left: 15px;
 }
 
 .contact-block h2{
@@ -164,10 +258,54 @@ a {
 
 .contact-block p {
 	color: #000;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.apointment {
+	width: 300px;
+}
+
+.contact h2 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.apointment h2 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.appointment-item {
+	padding: 0;
+	margin: 0;
+}
+
+.appointment-item label {
+	display: block;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+.appointment-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.appointment-form .button {
+	margin: 0;
+	display: block;
+	width: 100%;
 }
 
 .appointment-item input {
 	font: inherit;
+	display: block;
+	width: 140px;
 	border: 2px solid #000;
 	background-color: transparent;
 }

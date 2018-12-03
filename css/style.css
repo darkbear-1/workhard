@@ -29,13 +29,13 @@ a {
 .header-wrapper {
 	width: 100%;
 	background-color: #000;
+	margin-bottom: 60px;
 }
 
 .conteiner {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
-	border: 1px solid red;
 }
 
 .main-nav {
@@ -58,6 +58,7 @@ a {
 
 .logo {
 	order: 2;
+
 }
 
 .button {
@@ -298,13 +299,21 @@ input[type="radio"].visually-hidden {
 
 .appointment-form .button {
 	margin: 0;
+	margin-top: 10px;
 	display: block;
 	width: 100%;
 }
 
 .appointment-item input {
 	font: inherit;
+	box-sizing: border-box;
 	display: block;
+	padding: 0;
+	margin: 0;
+	padding-left: 15px;
+	padding-top: 8px;
+	padding-right: 15px;
+	padding-bottom: 7px;
 	width: 140px;
 	border: 2px solid #000;
 	background-color: transparent;
@@ -325,12 +334,64 @@ footer .conteiner {
 	display: flex;
 }
 
+footer p {
+	margin: 0;
+	padding: 0;
+	margin-top: 55px;
+	margin-bottom: 45px;
+}
+
 .footer-social {
+	width: 141px;
+	margin-top: 55px;
+	text-align: center;
 	margin-left: 90px;
 }
 
+.footer-social b {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.footer-social ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.social-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 43px;
+	height: 43px;
+	background-color: #000;
+}
+
+.social-button:hover,
+.social-button:focus {
+	background-color: #fff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+	fill: #000;
+}
+
 .footer-copyright {
+	text-align: center;
 	margin-left: auto;
+}
+
+.footer-copyright b {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.footer-copyright .button {
+	display: block;
 }
 
 .how {
@@ -350,6 +411,7 @@ footer .conteiner {
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
 	background: #fff;
+	color: #000;
 }
 
 .modal {
@@ -415,14 +477,37 @@ footer .conteiner {
 
 .other-header .logo{
 	order: 0;
+	margin-right: 20px;
 }
 
 .other-header {
 	margin-bottom: 42px;
 }
 
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	margin-bottom: 55px;
+}
+
 .breadcrumbs li {
 	list-style: none;
+	margin-left: 15px;
+}
+
+.breadcrumbs li:not(.breadcrumbs-current):after {
+	content: '';
+	transform: rotate(45deg);
+	display: inline-block;
+	margin-left: 17px;	
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+}
+
+.breadcrumbs li:first-child {
+	margin: 0;
 }
 
 .breadcrumbs a {
@@ -437,6 +522,12 @@ footer .conteiner {
 .product-photos {
 	display: flex;
 	flex-direction: column;
+}
+
+.product-photos-full {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 13px;
 }
 
 .product-wrapper {
@@ -458,17 +549,35 @@ footer .conteiner {
 }
 
 .product-price {
-	text-align: center;
+	font-size: 0;
+	margin-bottom: 65px;
+}
+
+.product-price .button {
+	font-size: 14px;
+}
+
+.product-price b {
 	background-color: #e5e5e5;
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 14px;
+	padding: 7px 34px;
 }
 
 .product-text {
+	padding: 0;
+	margin: 0;
 	width: 390px;
+	margin-bottom: 35px;
 }
 
 .product-info h3 {
+	padding: 0;
+	margin: 0;
 	font-size: 24px;
 	line-height: 30px;
+	margin-bottom: 30px;
 }
 
 .product-info ul {
@@ -476,14 +585,33 @@ footer .conteiner {
 	margin: 0;
 }
 
+.product-info li:before {
+	content: '';
+	display: inline-block;
+	transform: rotate(45deg);
+	margin-right: 13px;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+}
+
 .articul-wrapper {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.articul-wrapper p {
+	margin: 0;
+	padding: 0;
 }
 
 .price h1 {
 	text-align: center;
+	margin: 0;
+	padding: 0;
 	margin-bottom: 63px;
+	font-size: 48px;
 }
 
 .features-wrapper {
@@ -494,12 +622,16 @@ footer .conteiner {
 
 .about-us {
 	width: 390px;
-	border: 1px solid red;
 }
 
 .price-list p {
 	width: 380px;
-	border: 1px solid red;
+}
+
+.price-list h2 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 35px;
 }
 
 .product-info li {
@@ -509,19 +641,54 @@ footer .conteiner {
 .features-us-item-list {
 	padding: 0;
 	margin: 0;
+	margin-bottom: 60px;
+}
+
+.features-us-item h2 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.about-us h2 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 32px;
 }
 
 .features-us-item-list li {
 	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.features-us-item-list li:last-child {
+	margin-bottom: 0;
+}
+
+.features-us-item-list li:before {
+	content: '';
+	display: inline-block;
+	margin-right: 15px;
+	transform: rotate(45deg);
+	width: 10px;
+	height: 10px;
+	background-color: #000;
 }
 
 .price-table {
 border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
-border: 2px solid #000; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+width: 100%;
+padding: 0;
+margin: 0;
+margin-bottom: 107px;
 }
 
 .price-table th,
 .price-table td {
+	padding: 10px 0;
+	padding-left: 19px;
 	border: 2px solid #000;
 }
 

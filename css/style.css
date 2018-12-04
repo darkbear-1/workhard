@@ -425,6 +425,8 @@ footer p {
 	line-height: 42px;
 	padding: 0;
 	margin: 0;
+	margin-top: 43px;
+	margin-bottom: 20px;
 }
 
 .login-form input {
@@ -868,4 +870,135 @@ margin-bottom: 107px;
 .pagination-item a:focus
 {
 	background-color: #663d15;
+}
+
+.modal {
+	position: fixed;
+	margin-left: -230px;
+	top: 120px;
+	left: 50%;
+}
+
+.modal-login {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.modal-login p {
+	margin: 0;
+	margin-bottom: 13px;
+}
+
+.login-form p {
+	margin: 0;
+}
+
+.login-form input[name="login"] {
+	box-sizing: border-box;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 17px;
+	margin-bottom: 9px;
+	padding-right: 40px;
+	background-image: url(../img/user.svg);
+	background-repeat: no-repeat;
+	background-position: 272px center;
+	width: 300px;
+}
+
+.login-form input[name="password"] {
+	width: 300px;
+	box-sizing: border-box;
+	padding-right: 40px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 17px;
+	margin-bottom: 15px;
+	background-image: url(../img/lock.svg);
+	background-repeat: no-repeat;
+	background-position: 272px center;
+}
+
+.checkbox-indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 2px solid #000;
+	width: 20px;
+	height: 20px;
+}
+
+.login-password-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+	position: absolute;
+	content: '';
+	top: 6px;
+	right: 8px;
+	width: 14px;
+	height: 14px;
+	border-top: 3px solid #000;
+	transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+	position: absolute;
+	content: '';
+	top: 6px;
+	left: 8px;
+	width: 14px;
+	height: 14px;
+	transform: rotate(-45deg);
+	border-top: 3px solid #000;
+}
+
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+	border-color: #663d15;
+}
+
+.login-checkbox {
+	position: relative;
+	padding-left: 34px;
+	cursor: pointer;
+}
+
+.login-form button {
+	padding: 10px 0;
+	margin-top: 17px;
+	width: 100%;
+	margin-bottom: 60px;
+	cursor: pointer;
+}
+
+.modal-close {
+	background-color: #fff;
+	border: none;
+	top: 0;
+	left: 470px;
+	position: absolute;
+	font-size: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.modal-close:after {
+	transform: rotate(45deg);
+}
+
+.modal-close:before {
+	transform: rotate(-45deg);
+}
+
+.modal-close:after,
+.modal-close:before {
+	content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: #d0d0d0;
 }

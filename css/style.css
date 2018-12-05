@@ -168,6 +168,10 @@ input[type="radio"].visually-hidden {
 	display: flex;
 }
 
+.features-item {
+	padding-right: 50px;
+}
+
 .news-block {
 	background-color: #f8f5f2;
 	background-image: url(../img/shadow-bg.png),
@@ -453,10 +457,6 @@ footer p {
 .restore:hover,
 .restore:focus {
 	text-decoration: none;
-}
-
-.modal-map p {
-	border: 2px solid #fff;
 }
 
 .item-page {
@@ -877,11 +877,15 @@ margin-bottom: 107px;
 	margin-left: -230px;
 	top: 120px;
 	left: 50%;
+	animation-name: popap-login;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
 }
 
 .modal-login {
 	padding-left: 80px;
 	padding-right: 80px;
+	display: none;
 }
 
 .modal-login p {
@@ -1001,4 +1005,68 @@ margin-bottom: 107px;
     width: 19px;
     height: 3px;
     background-color: #d0d0d0;
+}
+
+.modal-map {
+	padding: 0;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	margin-left: -383px;
+	margin-top: -280px;
+	width: 766px;
+	height: 561px;
+	border: 7px solid #fff;
+	display: none;
+}
+
+.modal-map p {
+	margin: 0;
+}
+
+.modal-map-close {
+	top: 0;
+	font-size: 0;
+	border: 0;
+	background-color: transparent;
+	position: absolute;
+	right: -34px;
+	cursor: pointer;
+}
+
+.modal-map-close:before,
+.modal-map-close:after {
+	display: block;
+	position: absolute;	
+	content: '';
+	left: 0;
+	background-color: #d0d0d0;
+	width: 19px;
+	height: 2px;
+}
+
+.modal-map-close:before {
+	transform: rotate(45deg);
+}
+
+.modal-map-close:after {
+	transform: rotate(-45deg);
+}
+
+.modal-login-view {
+	display: block;
+}
+
+@keyframes popap-login {
+0% {
+	transform: translateY(-1000px);
+}
+25% {
+	transform: translateY(0);
+}
+50% {
+	transform: translateY(-50px);
+}
+100% {
+	transform: translateY(0);
 }
